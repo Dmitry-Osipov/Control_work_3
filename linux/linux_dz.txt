@@ -1,0 +1,31 @@
+1) использование команды cat в linux:
+cat > Pets.txt
+собаки
+кошки
+хомяки
+
+cat > PackAnimals.txt
+лошади
+верблюды
+ослы
+
+cat Pets.txt >> HumanFriends.txt
+cat PackAnimals.txt >> HumanFriends.txt
+cat HumanFriends.txt
+
+mv HumanFriends.txt HumanFriends
+
+2) работа с директориями в linux:
+mkdir friends
+mv HumanFriends friends/
+
+3) работа с mysql в linux. "Установить mysql на вашу вычислительную машину":
+sudo apt-get update
+sudo apt-get install mysql-server
+sudo systemctl start mysql
+sudo systemctl status mysql
+
+4) управление deb-пакетами:
+wget https://launchpad.net/ubuntu/+archive/primary/+files/wget_1.20.3-1ubuntu1_amd64.deb
+sudo dpkg -i wget_1.20.3-1ubuntu1_amd64.deb
+sudo dpkg -r wget
